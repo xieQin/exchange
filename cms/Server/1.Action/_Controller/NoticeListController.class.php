@@ -28,7 +28,9 @@ class NoticeListController extends ZBaseController {
             $facade = new BGJNoticeFacade();
             $res = $facade->getNotice();
         }
-        renderView("_tag", "list", $res);
+        $data1['t'] = $data->t;
+         $data1['r'] = $res;
+        renderView("_tag", "list", $data1);
     }
 
 }
