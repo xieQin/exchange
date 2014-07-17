@@ -18,7 +18,7 @@ class BGDNoticeFacade extends BBaseFacade {
     public function getNotice() {
 //$html = new simple_html_dom();
 
-        $key1 = MemcachedKeyFactory::gdNoticeKey();
+            $key1 = MemcachedKeyFactory::gdNoticeKey();
         //$this->getCache()->delete($key1);
         $res = $this->getCache()->get($key1);
         if ($res !== FALSE && !empty($res)) {
@@ -53,7 +53,7 @@ class BGDNoticeFacade extends BBaseFacade {
     }
 
     /**
-     *
+     * 
      * @param string $url
      */
     public function getDetail($url) {

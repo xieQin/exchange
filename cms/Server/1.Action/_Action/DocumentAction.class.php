@@ -41,21 +41,9 @@ class DocumentAction extends Action {
 
     private function getDocList() {
         $list = array();
-        $list["BindUser"] = array("name" => "绑定用户信息（包括背景、头像）", "path" => "/1.Action/_Service/BindUserService.class.php");
-        $list["DeleteTopic"] = array("name" => "删除主题", "path" => "/1.Action/_Service/DeleteTopicService.class.php");
-        $list["GetAllTopic"] = array("name" => "获得所有主题分页", "path" => "/1.Action/_Service/GetAllTopicService.class.php");
-        $list["GetTopic"] = array("name" => "获得主题详情", "path" => "/1.Action/_Service/GetTopicService.class.php");
-        $list["GetUserMsg"] = array("name" => "获得用户消息列表分页", "path" => "/1.Action/_Service/GetUserMsgService.class.php");
-        $list["GetUserTopic"] = array("name" => "获得用户主题分页", "path" => "/1.Action/_Service/GetUserTopicService.class.php");
-        $list["HasNewMsg"] = array("name" => "是否有新消息", "path" => "/1.Action/_Service/HasNewMsgService.class.php");
-        $list["ModifyAvatar"] = array("name" => "修改头像", "path" => "/1.Action/_Service/ModifyAvatarService.class.php");
-        $list["Praise"] = array("name" => "点赞", "path" => "/1.Action/_Service/PraiseService.class.php");
-        $list["PublishTopic"] = array("name" => "发布主题", "path" => "/1.Action/_Service/PublishTopicService.class.php");
-        $list["Reply"] = array("name" => "回复主题或回复他人", "path" => "/1.Action/_Service/ReplyService.class.php");
-        //$list["SaveTopicImg"] = array("name" => "保存主题图片", "path" => "/1.Action/_Service/SaveTopicImgService.class.php");
-        $list["GetReply"] = array("name" => "获得主题的回复分页", "path" => "/1.Action/_Service/GetReplyService.class.php");
-        //$list["GetBg"] = array("name" => "获得背景", "path" => "/1.Action/_Service/GetBgService.class.php");
-        $list["ModifyUserBg"] = array("name" => "修改用户背景", "path" => "/1.Action/_Service/ModifyUserBgService.class.php");
+        $list["ExchangeInfo"] = array("name" => "获取交易所列表", "path" => "/1.Action/_Service/ExchangeInfoService.class.php");
+        $list["NoticeDetail"] = array("name" => "获得公告详情", "path" => "/1.Action/_Controller/NoticeDetailController.class.php");
+        $list["NoticeList"] = array("name" => "获得交易所列表", "path" => "/1.Action/_Controller/NoticeListController.class.php");
 
 
         return $list;

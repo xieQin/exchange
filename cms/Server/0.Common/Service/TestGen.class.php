@@ -143,6 +143,8 @@ class TestGen {
                 function postData(){ var p='{'";
 
         $act = '';
+        $controller = '';
+        $isAct = true;
         $array_prop = array();
         foreach ($names as $obj) {
             $name = $obj["name"];
@@ -154,11 +156,16 @@ class TestGen {
             }
             if (strpos($name, 'Service')) {
                 $act = $name;
+                $isAct = true;
+            }
+            if (strpos($name, 'Controller')) {
+                $controller = $name;
+                $isAct = false;
             }
         }
         $tmpTest.="<tr><td ><input type='button' value='提交' onclick='javascript:postData();'></td></tr>";
         $tmpTest.="</tbody></table><form id='form1' method='post' action='{$action}' ><input name='param_p' id='param_p' type='hidden' value='' >\r
-                <input name='param_act' type='hidden' value='{$act}'></form>";
+                <input name='param_act' type='hidden' value='{$act}'><input name='param_ctrl' type='hidden' value='{$controller}'></form>";
 
         for ($index = 0; $index < count($array_prop); $index++) {
 

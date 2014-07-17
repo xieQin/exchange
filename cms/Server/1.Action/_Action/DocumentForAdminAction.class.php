@@ -41,35 +41,10 @@ class DocumentForAdminAction extends Action {
 
     private function getDocList() {
         $list = array();
-        $list["PraiseInsert"] = array("name" => "新增点赞", "path" => "/1.Action/_Service/_AdminWS/PraiseInsertService.class.php");
-        $list["PraiseDelete"] = array("name" => "删除点赞", "path" => "/1.Action/_Service/_AdminWS/PraiseDeleteService.class.php");
-        $list["PraiseUpdate"] = array("name" => "更新点赞", "path" => "/1.Action/_Service/_AdminWS/PraiseUpdateService.class.php");
-        $list["PraiseQuery"] = array("name" => "查询点赞", "path" => "/1.Action/_Service/_AdminWS/PraiseQueryService.class.php");
-
-
-
-        $list["TopicInsert"] = array("name" => "新增主题", "path" => "/1.Action/_Service/_AdminWS/TopicInsertService.class.php");
-        $list["TopicDelete"] = array("name" => "删除主题", "path" => "/1.Action/_Service/_AdminWS/TopicDeleteService.class.php");
-        $list["TopicUpdate"] = array("name" => "更新主题", "path" => "/1.Action/_Service/_AdminWS/TopicUpdateService.class.php");
-        $list["TopicQuery"] = array("name" => "查询主题", "path" => "/1.Action/_Service/_AdminWS/TopicQueryService.class.php");
-
-
-        $list["ReplyInsert"] = array("name" => "新增回复", "path" => "/1.Action/_Service/_AdminWS/ReplyInsertService.class.php");
-        $list["ReplyDelete"] = array("name" => "删除回复", "path" => "/1.Action/_Service/_AdminWS/ReplyDeleteService.class.php");
-        $list["ReplyUpdate"] = array("name" => "更新回复", "path" => "/1.Action/_Service/_AdminWS/ReplyUpdateService.class.php");
-        $list["ReplyQuery"] = array("name" => "查询回复", "path" => "/1.Action/_Service/_AdminWS/ReplyQueryService.class.php");
-
-
-        $list["UserUpdate"] = array("name" => "更新用户", "path" => "/1.Action/_Service/_AdminWS/UserUpdateService.class.php");
-        $list["UserQuery"] = array("name" => "查询用户", "path" => "/1.Action/_Service/_AdminWS/UserQueryService.class.php");
-
-
-        $list["TopicImgDelete"] = array("name" => "删除主题图片", "path" => "/1.Action/_Service/_AdminWS/TopicImgDeleteService.class.php");
-        $list["TopicImgQuery"] = array("name" => "查询主题图片", "path" => "/1.Action/_Service/_AdminWS/TopicImgQueryService.class.php");
-
-
-        $list["BgAddOrUpdate"] = array("name" => "添加或更新背景图", "path" => "/1.Action/_Service/_AdminWS/BgAddOrUpdateService.class.php");
-        $list["GetBg"] = array("name" => "获得背景图", "path" => "/1.Action/_Service/GetBgService.class.php");
+        $list["ExchangeInsert"] = array("name" => "新增交易所信息", "path" => "/1.Action/_Service/_AdminWS/ExchangeInsertService.class.php");
+        $list["ExchangeDelete"] = array("name" => "删除交易所信息", "path" => "/1.Action/_Service/_AdminWS/ExchangeDeleteService.class.php");
+        $list["ExchangeUpdate"] = array("name" => "更新交易所信息", "path" => "/1.Action/_Service/_AdminWS/ExchangeUpdateService.class.php");
+        $list["ExchangeQuery"] = array("name" => "查询交易所信息", "path" => "/1.Action/_Service/_AdminWS/ExchangeQueryService.class.php");
 
 
         return $list;

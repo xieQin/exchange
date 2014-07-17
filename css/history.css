@@ -19,14 +19,21 @@ img, input, textarea {
 	border:0;
 }
 
-a {
+a:visted {
 	text-decoration:none;
 	color:#787878;
 	outline:none;
 }
 
+a {
+	text-decoration:none;
+	color:#bdbdae;
+	outline:none;
+}
+
 a:hover {
 	text-decoration:underline;
+	cursor: pointer;
 }
 
 body {
@@ -109,6 +116,8 @@ a { outline:none; } /*’Î∂‘firefoxµ»*/
 .history-date ul li dl dt {
 	font:14px Œ¢»Ì—≈∫⁄;
 	color:#bdbdae;
+	cursor: pointer;
 }
+
 
 

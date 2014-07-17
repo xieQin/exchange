@@ -7,7 +7,7 @@ return array(
     "DB_HOST" => "112.124.26.68:3306",
     "DB_USER" => "zsgjs",
     "DB_PWD" => "zsgjs123456",
-    "DB_NAME" => "sns",
+    "DB_NAME" => "test",
     //有效的token，array('token1'), 为null不指定
     "tokens" => null,
     //有效的IP,array('ip1'),不限制ip指定 null

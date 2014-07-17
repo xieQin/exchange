@@ -12,15 +12,22 @@
  */
 class MemcachedKeyFactory {
 
-    public static function ttNoticeKey(){
+    public static function ttNoticeKey() {
         return 'tt_notice';
     }
-    public static function gdNoticeKey(){
+
+    public static function gdNoticeKey() {
         return 'gd_notice';
     }
+
     public static function gjNoticeKey() {
-    	return 'gj_notice';
+        return 'gj_notice';
     }
+    
+    public static function exchangeInfoKey(){
+        return 'zj_exchangeinfo';
+    }
+
 }
 
 ?>
