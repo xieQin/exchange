@@ -33,7 +33,7 @@ class TestAction extends Action {
         $url = UA("Api?h={$h}&p={$p}");
         echo "<a href='{$url}'>{$url}</a>";
     }
-    
+
     function testNoticeListWeb() {
         $header = new ApiHeader();
         $header->act = "NoticeList";
